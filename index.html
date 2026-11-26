@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Binder support</title>
+<style>
+/* The app's answer-sheet look, carried to the web: desk green-gray, a white
+   sheet, graphite text, printed-green rules and one pencil-yellow mark. */
+:root {
+  --desk: #edf2ef;
+  --sheet: #ffffff;
+  --graphite: #26282c;
+  --soft: #5f666d;
+  --green: #17806a;
+  --rule: #bfdcd3;
+  --pencil: #f5bc1c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --desk: #17191c;
+    --sheet: #22262a;
+    --graphite: #eceef0;
+    --soft: #9ea6ad;
+    --green: #57c2a8;
+    --rule: #30463f;
+    --pencil: #f2b81b;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 24px 16px 64px;
+  background: var(--desk);
+  color: var(--graphite);
+  font: 18px/1.6 Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+}
+main {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 28px 28px 36px;
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+}
+.app {
+  display: inline-block;
+  margin: 0 0 20px;
+  padding: 2px 12px;
+  background: var(--pencil);
+  color: #26282c;
+  border-radius: 999px;
+  font: 600 15px/1.6 "Avenir Next", Avenir, "Segoe UI", sans-serif;
+}
+.app a { color: inherit; text-decoration: none; }
+h1, h2 {
+  font-family: "Avenir Next Condensed", "Avenir Next", "Arial Narrow", sans-serif;
+  line-height: 1.15;
+}
+h1 { margin: 0 0 12px; font-size: 2.6rem; font-weight: 800; }
+h2 {
+  margin: 28px 0 6px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+p, ul { margin: 0 0 12px; }
+ul { padding-left: 1.2em; }
+.date, .foot {
+  color: var(--soft);
+  font: 500 14px/1.5 "Avenir Next", Avenir, "Segoe UI", sans-serif;
+}
+.foot { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--rule); }
+a { color: var(--green); }
+a:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="app">Binder</p>
+  <h1>Help with Binder</h1>
+  <p>Binder is a question bank for the Life &amp; Health insurance license exam. Most questions about the app are answered below.</p>
+
+  <h2>I bought the full bank and it is locked</h2>
+  <p>Open Settings (the gear on the Today tab) and choose "Restore a purchase". Make sure the iPhone is signed in to the Apple Account that made the purchase.</p>
+
+  <h2>Does Binder cover my state?</h2>
+  <p>Binder covers the general content that state Life &amp; Health exams share. It does not yet include state-specific law. Your state's candidate handbook lists that part.</p>
+
+  <h2>I think an answer is wrong</h2>
+  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdYzTdEzQc6dPzQ7LZwFt1IvT-_2LJQqwp-k_US2yqfRImvsQ/viewform">Write to us</a> with the question's first few words and what you believe is right. Every report is checked against the law or the regulator's own publication, and corrections ship in the next update.</p>
+
+  <h2>How do I start over?</h2>
+  <p>Settings, then "Erase my progress". Your purchase is not affected.</p>
+
+  <h2>How do I get a refund?</h2>
+  <p>Apple handles payments and refunds. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+  <h2>Contact</h2>
+  <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdYzTdEzQc6dPzQ7LZwFt1IvT-_2LJQqwp-k_US2yqfRImvsQ/viewform">Send us a message</a>. We answer by email, usually within two business days.</p>
+
+  <p class="foot">Binder is an independent study aid. It is not affiliated with any state insurance department or testing company. <a href="privacy.html">Privacy policy</a></p>
+</main>
+</body>
+</html>
